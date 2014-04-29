@@ -70,6 +70,7 @@ body
 		a
 			color: inherit
 			text-decoration: none
+
 .feedback
 	display: inline-block
 	vertical-align: top
@@ -101,12 +102,20 @@ body
 			content: ""
 			margin: 5px auto
 
+.out
+	min-height: 100%
+	height: auto !important
+	height: 100%
+	margin: 0 auto -155px
+.footer, .site_push
+	height: 155px
+
 .footer
 	background: url('../img/footer_line.png') top center repeat-x
 	.footer__in
 		@extend %in
 		padding-top: 50px
-		padding-bottom: 190px
+		padding-bottom: 50px
 		+clr
 		font-size: 13px
 		color: #7a7979
@@ -136,7 +145,8 @@ body
 			display: block
 			height: 100%
 
-
+.page
+	padding-bottom: 50px
 
 
 
