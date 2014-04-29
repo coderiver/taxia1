@@ -62,11 +62,22 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; backgr
 
 .page { padding-top: 50px; padding-bottom: 50px; }
 
-.getapp li { display: block; margin-bottom: 10px; text-align: center; border: 1px solid #ebe9e7; height: 55px; line-height: 55px; -webkit-border-radius: 10px 10px 0 10px; -moz-border-radius: 10px 10px 0 10px; -ms-border-radius: 10px 10px 0 10px; -o-border-radius: 10px 10px 0 10px; border-radius: 10px 10px 0 10px; -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24); -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24); box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24); background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(3.5%, #e5e5e5), color-stop(96.5%, #ffffff)); background-image: -webkit-linear-gradient(bottom, #e5e5e5 3.5%, #ffffff 96.5%); background-image: -moz-linear-gradient(bottom, #e5e5e5 3.5%, #ffffff 96.5%); background-image: -o-linear-gradient(bottom, #e5e5e5 3.5%, #ffffff 96.5%); background-image: linear-gradient(bottom, #e5e5e5 3.5%, #ffffff 96.5%); }
+.getapp { margin-bottom: 45px; }
+.getapp li { display: block; margin-top: 10px; text-align: center; border: 1px solid #ebe9e7; height: 55px; line-height: 55px; -webkit-border-radius: 10px 10px 0 10px; -moz-border-radius: 10px 10px 0 10px; -ms-border-radius: 10px 10px 0 10px; -o-border-radius: 10px 10px 0 10px; border-radius: 10px 10px 0 10px; -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24); -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24); box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24); background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(3.5%, #e5e5e5), color-stop(96.5%, #ffffff)); background-image: -webkit-linear-gradient(bottom, #e5e5e5 3.5%, #ffffff 96.5%); background-image: -moz-linear-gradient(bottom, #e5e5e5 3.5%, #ffffff 96.5%); background-image: -o-linear-gradient(bottom, #e5e5e5 3.5%, #ffffff 96.5%); background-image: linear-gradient(bottom, #e5e5e5 3.5%, #ffffff 96.5%); }
+.getapp li:first-child { margin-top: 0; }
 .getapp i { display: inline-block; vertical-align: middle; }
 .getapp a { display: block; }
 .getapp .getapp__ios i { background: url('../img/icons-sea73d344d5.png') 0 0 no-repeat; width: 122px; height: 32px; }
 .getapp .getapp__android i { background: url('../img/icons-sea73d344d5.png') 0 -96px no-repeat; width: 112px; height: 33px; }
+
+.news .news__title { font-size: 24px; color: #2a2a2a; margin-bottom: 15px; }
+.news .news__item { font-size: 15px; color: #555555; margin-top: 25px; }
+.news .news__item:first-child { margin-top: 0; }
+.news .news__item a { color: inherit; text-decoration: underline; }
+.news .news__date { margin-bottom: 5px; }
+.news .news__date span { display: inline-block; background: #ffb13d; padding: 0 5px; margin-left: -5px; color: white; height: 23px; line-height: 23px; font-size: 11px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; }
+.news .news__moar { margin-top: 20px; font-size: 12px; color: #9b9b9b; }
+.news .news__moar a { color: inherit; text-decoration: underline; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
