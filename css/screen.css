@@ -70,6 +70,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; backgr
 .getapp .getapp__ios i { background: url('../img/icons-sea73d344d5.png') 0 0 no-repeat; width: 122px; height: 32px; }
 .getapp .getapp__android i { background: url('../img/icons-sea73d344d5.png') 0 -96px no-repeat; width: 112px; height: 33px; }
 
+.news { margin-bottom: 60px; }
 .news .news__title { font-size: 24px; color: #2a2a2a; margin-bottom: 15px; }
 .news .news__item { font-size: 15px; color: #555555; margin-top: 25px; }
 .news .news__item:first-child { margin-top: 0; }
