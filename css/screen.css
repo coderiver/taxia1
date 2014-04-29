@@ -21,21 +21,27 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; background: white; min-width: 1005px; }
 
-.container { width: 985px; padding: 0 10px; margin: 0 auto; }
+.container, .header .header__in { width: 985px; padding: 0 10px; margin: 0 auto; }
 
-.topline .container { *zoom: 1; padding-top: 14px; padding-bottom: 14px; }
-.topline .container:after { content: " "; display: table; clear: both; }
-.topline .topline__right { float: right; }
-.topline .topline__contact { display: inline-block; vertical-align: top; }
-.topline .topline__order { display: inline-block; vertical-align: top; }
+.header .header__in { *zoom: 1; padding-top: 14px; padding-bottom: 14px; line-height: 1; }
+.header .header__in:after { content: " "; display: table; clear: both; }
+.header .header__logo { display: inline-block; vertical-align: top; background: url('../img/icons-s0642298172.png') 0 0 no-repeat; width: 229px; height: 44px; margin-right: 40px; }
+.header .header__logo a { display: block; height: 100%; }
+.header .header__menu { display: inline-block; vertical-align: top; padding-top: 23px; }
+.header .header__menu-clause { display: inline-block; margin-left: 20px; font-size: 14px; color: #282828; }
+.header .header__menu-clause:first-child { margin-left: 0; }
+.header .header__menu-clause a { color: inherit; text-decoration: none; }
+.header .header__right { float: right; }
+.header .header__contacts { display: inline-block; vertical-align: top; margin-right: 35px; }
+.header .header__tel { position: relative; font-size: 22px; }
+.header .header__tel:before { position: absolute; top: 50%; right: 100%; margin-right: 10px; margin-top: -12px; background: url('../img/icons-s0642298172.png') 0 -54px no-repeat; width: 24px; height: 24px; content: ""; }
+.header .header__callback { font-size: 13px; color: #939393; }
+.header .header__callback a { color: inherit; text-decoration: none; }
 
-.logo { display: inline-block; vertical-align: top; background: url('../img/icons-s087e493071.png') 0 0 no-repeat; width: 229px; height: 44px; margin-right: 40px; }
-.logo a { display: block; height: 100%; }
-
-.nav { display: inline-block; vertical-align: top; padding-top: 23px; }
-.nav li { display: inline-block; margin-left: 20px; font-size: 14px; color: #282828; }
-.nav li:first-child { margin-left: 0; }
-.nav li a { color: inherit; text-decoration: none; }
+.feedback { display: inline-block; vertical-align: top; line-height: 30px; height: 30px; font-size: 0; }
+.feedback .feedback__label { display: inline-block; vertical-align: top; font-size: 10px; text-transform: uppercase; color: white; font-weight: bold; padding: 0 15px; -webkit-border-radius: 0 5px 0 0; -moz-border-radius: 0 5px 0 0; -ms-border-radius: 0 5px 0 0; -o-border-radius: 0 5px 0 0; border-radius: 0 5px 0 0; background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #1b1b1b), color-stop(100%, #6a6a6a)); background-image: -webkit-linear-gradient(bottom, #1b1b1b 0%, #6a6a6a 100%); background-image: -moz-linear-gradient(bottom, #1b1b1b 0%, #6a6a6a 100%); background-image: -o-linear-gradient(bottom, #1b1b1b 0%, #6a6a6a 100%); background-image: linear-gradient(bottom, #1b1b1b 0%, #6a6a6a 100%); }
+.feedback .feedback__icon { display: inline-block; vertical-align: top; width: 32px; height: 30px; position: relative; -webkit-border-radius: 5px 0 0 5px; -moz-border-radius: 5px 0 0 5px; -ms-border-radius: 5px 0 0 5px; -o-border-radius: 5px 0 0 5px; border-radius: 5px 0 0 5px; -webkit-box-shadow: inset 0 1px 1px #ffd200; -moz-box-shadow: inset 0 1px 1px #ffd200; box-shadow: inset 0 1px 1px #ffd200; background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #f2a900), color-stop(99.46%, #ffde2a), color-stop(100%, #ffde2a)); background-image: -webkit-linear-gradient(bottom, #f2a900 0%, #ffde2a 99.46%, #ffde2a 100%); background-image: -moz-linear-gradient(bottom, #f2a900 0%, #ffde2a 99.46%, #ffde2a 100%); background-image: -o-linear-gradient(bottom, #f2a900 0%, #ffde2a 99.46%, #ffde2a 100%); background-image: linear-gradient(bottom, #f2a900 0%, #ffde2a 99.46%, #ffde2a 100%); }
+.feedback .feedback__icon:before { display: block; background: url('../img/icons-s0642298172.png') 0 -88px no-repeat; width: 16px; height: 19px; content: ""; margin: 5px auto; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
