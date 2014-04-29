@@ -15,6 +15,10 @@ body
 // 715+200+70
 
 .header
+	position: relative
+	background: #fff
+	+box-shadow(0 1px 1px rgba(0,0,0,.1))
+	z-index: 10
 	.header__in
 		+clr
 		@extend %in
@@ -97,7 +101,40 @@ body
 			content: ""
 			margin: 5px auto
 
-
+.footer
+	background: url('../img/footer_line.png') top center repeat-x
+	.footer__in
+		@extend %in
+		padding-top: 50px
+		padding-bottom: 190px
+		+clr
+		font-size: 13px
+		color: #7a7979
+	.footer__info
+		display: inline-block
+		vertical-align: top
+		margin-right: 70px
+	.footer__copy
+	.footer__tel
+		font-size: 22px
+		color: #000
+	.footer__menu
+		display: inline-block
+		vertical-align: top
+	.footer__menu-clause
+		display: inline-block
+		margin-left: 15px
+		&:first-child
+			margin-left: 0
+		a
+			color: inherit
+			text-decoration: underline
+	.footer__madeby
+		float: right
+		+s(madeby)
+		a
+			display: block
+			height: 100%
 
 
 
