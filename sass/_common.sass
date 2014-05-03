@@ -419,15 +419,114 @@ body
 		&:first-child
 			margin-left: 0
 
+.topper
+	position: relative
+	background: url("../img/top_bg.jpg") 50% 0% no-repeat, url("../img/top_bg_2.jpg") repeat-x
+	&:before
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		content: ""
+		height: 14px
+		background: url('../img/top_dots.jpg') repeat-x
+	.topper__in
+		position: relative
+		// height: 735px
+		@extend %in
+		padding-top: 480px
+		padding-bottom: 40px
+		// background: url('../img/top_bg.jpg') no-repeat
+	.topper__taxi
+		position: absolute
+		top: 217px
+		left: 0
+		width: 737px
+		height: 234px
+		background: url(../img/taxi.png) no-repeat
+	.topper__bird
+		position: absolute
+		top: 102px
+		left: 113px
+		+s(bird)
 
-
-
-
-
-
-
-
-
+.order
+	@include background-image(linear-gradient(bottom, #1b1b1b 0%, #6a6a6a 100%))
+	+border-radius(10px)
+	.order__in
+		+clr
+		padding: 17px 10px
+	.order__group
+		float: left
+		width: 175px
+		height: 45px
+		position: relative
+		margin-right: 3px
+		&.order__group_sm
+			width: 110px
+		&.order__group_location
+			.order__icon
+				+s(pin)
+				left: 10px
+				top: 50%
+				margin-top: -10px
+		&.order__group_date
+			.order__icon
+				+s(date)
+				left: 12px
+				top: 50%
+				margin-top: -8px
+		&.order__group_time
+			.order__icon
+				+s(time)
+				left: 10px
+				top: 50%
+				margin-top: -10px
+		&.order__group_tel
+			.order__icon
+				+s(tel)
+				left: 12px
+				top: 50%
+				margin-top: -8px
+	.order__input
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		width: 100%
+		background-color: #272727
+		@include box-shadow(0 1px 1px rgba(255,255,255,.22))
+		+box
+		+border-radius(10px 10px 0 10px)
+		padding: 0 10px 0 38px
+		color: #fff
+		+placeholder-color(#a6a6a6)
+		font-size: 13px
+		&:focus
+			+placeholder-color(transparent)
+	.order__icon
+		position: absolute
+		top: 0
+		left: 0
+	.order__btn
+		position: relative
+		float: left
+		margin-left: 6px
+		padding: 0 20px 0 46px
+		height: 45px
+		@include box-shadow(0 1px 1px rgba(0,0,0,.29), inset 0 1px 1px #ffd200)
+		@include background-image(linear-gradient(bottom, #f2a900 0%, #ffde2a 99.46%, #ffde2a 100%))
+		+border-radius(10px 10px 0 10px)
+		cursor: pointer
+		color: #414141
+		font-size: 18px
+		@include text-shadow(0 1px 1px #ffd470)
+		i
+			position: absolute
+			top: 50%
+			margin-top: -5px
+			left: 10px
+			+s(taxdot)
 
 
 
