@@ -23,7 +23,9 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 
 .h1 { color: #2a2a2a; font-weight: normal; line-height: 1.4; font-size: 40px; margin-left: -30px; }
 
-.h2 { color: #ffb300; font-size: 30px; line-height: 1.2; font-weight: normal; margin-left: -30px; }
+.h2 { color: #ffb300; font-size: 30px; line-height: 1.2; font-weight: normal; margin-left: -30px; margin-bottom: 30px; }
+
+.h3 { color: #ffb300; font-size: 20px; line-height: 1.2; font-weight: normal; margin-left: -30px; margin-bottom: 25px; }
 
 .container, .header .header__in, .footer .footer__in, .topper .topper__in { width: 985px; padding: 0 10px; margin: 0 auto; }
 
@@ -119,10 +121,12 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; color:
 .entry .infobox { margin-right: -75px; }
 .entry .h1 { margin-bottom: 45px; }
 .entry .h2 { margin-bottom: 30px; }
-.entry > p { margin-bottom: 40px; }
+.entry > p { margin-bottom: 30px; }
 .entry ul li { margin-bottom: 50px; }
 .entry ul p { color: #8c8c8c; }
 .entry ul p strong { color: #2a2a2a; }
+.entry .list li { padding-left: 40px; position: relative; margin-bottom: 30px; }
+.entry .list li:before { position: absolute; top: 7px; left: 15px; width: 5px; height: 5px; background: #7f7f7f; content: ""; }
 
 .adv { position: relative; padding: 5px; background: white; border: 2px solid #ffc443; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; margin-bottom: 50px; }
 .adv:before { position: absolute; bottom: -10px; right: 7px; background: url('../img/icons-saa2955fd30.png') 0 0 no-repeat; width: 171px; height: 54px; content: ""; }
