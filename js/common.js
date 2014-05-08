@@ -23,4 +23,9 @@ head.ready(document, function () {
 
 	} tabs();
 
+	$('.js-popuptrigger').on('click', function() {
+		$(this).parent().find('.popup').toggle();
+		return false;
+	});
+
 });

@@ -93,6 +93,7 @@ a
 			+s(phone)
 			content: ""
 	.header__callback
+		position: relative
 		font-size: 13px
 		color: #939393
 		a
@@ -100,11 +101,15 @@ a
 			text-decoration: none
 
 .feedback
+	position: relative
 	display: inline-block
 	vertical-align: top
-	line-height: 30px
-	height: 30px
-	font-size: 0
+	.feedback__trigger
+		cursor: pointer
+		line-height: 30px
+		height: 30px
+		font-size: 0
+		+nosel
 	.feedback__label
 		display: inline-block
 		vertical-align: top
@@ -643,7 +648,7 @@ a
 	position: absolute
 	top: 55px
 	right: 0
-	z-index: 10
+	// z-index: 10
 	+clr
 	.price__menu
 		float: left
@@ -880,9 +885,59 @@ a
 		small
 			font-size: 13px
 
-
-
-
+.popup
+	position: absolute
+	top: 100%
+	margin-top: 12px
+	width: 300px
+	left: 50%
+	margin-left: -150px
+	text-align: center
+	@include background-image(linear-gradient(bottom, #1b1b1b 0%, #6a6a6a 100%))
+	+border-radius(10px)
+	display: none
+	z-index: 1000
+	&:before
+		+arr(20, 10, #6a6a6a, t)
+		position: absolute
+		top: -10px
+		left: 50%
+		margin-left: -10px
+		content: ""
+	.popup__in
+		padding: 20px 10px
+	.popup__btn
+		position: relative
+		padding: 0 20px 0 46px
+		height: 45px
+		@include box-shadow(0 1px 1px rgba(0,0,0,.29), inset 0 1px 1px #ffd200)
+		@include background-image(linear-gradient(bottom, #f2a900 0%, #ffde2a 99.46%, #ffde2a 100%))
+		+border-radius(10px 10px 0 10px)
+		cursor: pointer
+		color: #414141
+		font-size: 18px
+		@include text-shadow(0 1px 1px #ffd470)
+		i
+			position: absolute
+			top: 50%
+			margin-top: -5px
+			left: 10px
+			+s(taxdot)
+.input
+	display: block
+	height: 45px
+	width: 100%
+	margin-bottom: 10px
+	background-color: #272727
+	@include box-shadow(0 1px 1px rgba(255,255,255,.22))
+	+box
+	+border-radius(10px 10px 0 10px)
+	padding: 0 20px
+	color: #fff
+	+placeholder-color(#a6a6a6)
+	font-size: 13px
+	&:focus
+		+placeholder-color(transparent)
 
 
 
