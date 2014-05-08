@@ -39,7 +39,7 @@ a:hover { text-decoration: none; }
 .header .header__in:after { content: " "; display: table; clear: both; }
 .header .header__logo { display: inline-block; vertical-align: top; background: url('../img/icons-sb76b411a78.png') 0 -148px no-repeat; width: 229px; height: 44px; margin-right: 40px; }
 .header .header__logo a { display: block; height: 100%; }
-.header .header__menu { display: inline-block; vertical-align: top; padding-top: 23px; }
+.header .header__menu { display: inline-block; vertical-align: top; padding-top: 21px; }
 .header .header__menu-clause { display: inline-block; margin-left: 20px; font-size: 14px; color: #282828; }
 .header .header__menu-clause:first-child { margin-left: 0; }
 .header .header__menu-clause a { color: inherit; text-decoration: none; }
@@ -49,6 +49,7 @@ a:hover { text-decoration: none; }
 .header .header__tel:before { position: absolute; top: 50%; right: 100%; margin-right: 10px; margin-top: -12px; background: url('../img/icons-sb76b411a78.png') 0 -1432px no-repeat; width: 24px; height: 24px; content: ""; }
 .header .header__callback { position: relative; font-size: 13px; color: #939393; }
 .header .header__callback a { color: inherit; text-decoration: none; }
+.header .header__callback a:hover { text-decoration: underline; }
 
 .feedback { position: relative; display: inline-block; vertical-align: top; }
 .feedback .feedback__trigger { cursor: pointer; line-height: 30px; height: 30px; font-size: 0; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
@@ -88,20 +89,24 @@ a:hover { text-decoration: none; }
 .media .media__item { font-size: 15px; color: #555555; margin-top: 25px; }
 .media .media__item:first-child { margin-top: 0; }
 .media .media__item a { color: inherit; text-decoration: underline; }
+.media .media__item a:hover { text-decoration: none; }
 .media .media__date { margin-bottom: 5px; }
 .media .media__date span { display: inline-block; background: #ffb13d; padding: 0 5px; margin-left: -5px; color: white; height: 23px; line-height: 23px; font-size: 11px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; }
 .media .media__moar { margin-top: 20px; font-size: 12px; color: #9b9b9b; }
 .media .media__moar a { color: inherit; text-decoration: underline; }
+.media .media__moar a:hover { text-decoration: none; }
 
 .work { color: #2a2a2a; margin-bottom: 90px; }
 .work .work__pic { margin-bottom: 5px; }
 .work .work__pic img { display: block; }
 .work .work__title { font-size: 20px; font-family: "PF Square Sans Pro Medium", Arial, "Helvetica Neue", Helvetica, sans-serif; margin-right: 20px; line-height: 1; margin-bottom: 10px; }
 .work .work__title a { color: inherit; text-decoration: none; }
+.work .work__title a:hover { text-decoration: underline; }
 .work .work__desc { font-size: 14px; }
 .work .work__desc a { color: inherit; text-decoration: underline; }
 .work .work__moar { margin-top: 10px; font-size: 12px; }
 .work .work__moar a { color: #9b9b9b; text-decoration: underline; }
+.work .work__moar a:hover { text-decoration: none; }
 
 .autopark { position: relative; text-align: center; margin-bottom: 85px; background-color: #f7f7f7; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8f8f8), color-stop(100%, #dde1e1)); background-image: -webkit-linear-gradient(#f8f8f8, #dde1e1); background-image: -moz-linear-gradient(#f8f8f8, #dde1e1); background-image: -o-linear-gradient(#f8f8f8, #dde1e1); background-image: linear-gradient(#f8f8f8, #dde1e1); -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; }
 .autopark:before { position: absolute; bottom: -29px; left: 50%; margin-left: -121px; background: url('../img/icons-sb76b411a78.png') 0 -64px no-repeat; width: 242px; height: 32px; content: ""; }
@@ -144,7 +149,7 @@ a:hover { text-decoration: none; }
 
 .entry { margin-right: 105px; font-size: 15px; }
 .entry .infobox { margin-right: -75px; }
-.entry .h1 { margin-bottom: 45px; }
+.entry .h1 { margin-bottom: 30px; }
 .entry .h2 { margin-bottom: 30px; }
 .entry > p { margin-bottom: 30px; }
 .entry ul li { margin-bottom: 50px; }
