@@ -6,6 +6,12 @@ body
 	background: #fff
 	min-width: 1100px
 
+a
+	color: #666
+	text-decoration: underline
+	&:hover
+		text-decoration: none
+
 .h1
 	color: #2a2a2a
 	font-weight: normal
@@ -134,6 +140,8 @@ body
 
 .footer
 	background: url('../img/footer_line.png') top center repeat-x
+	.order
+		margin-bottom: 50px
 	.footer__in
 		@extend %in
 		padding-top: 50px
@@ -298,11 +306,71 @@ body
 		font-size: 11px
 		color: #7a7a7a
 		text-transform: uppercase
-
+.infotable-row
+	margin-bottom: 35px
+	margin-right: -75px
+	.infotable
+		padding-bottom: 21px
+		margin-left: -45px
+		margin-bottom: 18px
+		// margin-right: -75px
+		background: url('../img/info_shadow.png') no-repeat 0 100%
+		.infotable__inner
+			padding: 20px 25px 10px
+			+border-radius(10px)
+			background-color: #efe5ca
+			+g(#fbf5e6, #efe5ca)
+		.infotable__head
+			margin-bottom: 30px
+			i
+				display: inline-block
+				vertical-align: middle
+				+s(shashki)
+			h2
+				display: inline-block
+				vertical-align: middle
+				font-weight: bold
+				font-size: 18px
+				color: #2a2a2a
+				margin-left: 20px
+				span
+					color: #a80101
+	.infotable__note
+		font-size: 13px
+		color: #8c8c8c
+		span
+			color: #a80101
+	.infotable__table
+		thead
+			color: #88613a
+			text-transform: uppercase
+			font-size: 13px
+			line-height: 1
+			border-bottom: 3px solid #ffb13d
+			text-align: center
+			td
+				padding-bottom: 15px
+				&:first-child
+					text-align: left
+		tbody
+			td
+				line-height: 1
+				padding: 20px 17px
+				text-align: center
+				font-size: 15px
+				color: #5f5346
+				font-weight: bold
+				&:first-child
+					text-align: left
+					font-weight: normal
+			tr
+				&:nth-child(2n)
+					background: #f4dfaa
 
 .infobox
 	padding-bottom: 21px
 	margin-left: -45px
+	margin-right: -75px
 	margin-bottom: 30px
 	background: url('../img/info_shadow.png') no-repeat 0 100%
 	h3
@@ -394,6 +462,14 @@ body
 				content: ""
 	.listnum
 		li
+			padding-left: 40px
+			position: relative
+			margin-bottom: 30px
+			span
+				position: absolute
+				top: 0
+				left: 15px
+				color: #7f7f7f
 
 .adv
 	position: relative
@@ -725,8 +801,19 @@ body
 		display: inline-block
 		height: 50px
 
-
-
+.infomoar
+	h2, h3
+		margin-top: 50px
+		margin-bottom: 25px
+	h2
+		font-size: 14px
+	h3
+		font-size: 12px
+		// margin-bottom: 25px
+	p
+		margin-bottom: 15px
+		small
+			font-size: 13px
 
 
 
