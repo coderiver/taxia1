@@ -770,6 +770,71 @@ a
 .subprice
 	margin: 25px 0 0
 	padding-bottom: 40px
+	&.subprice_mod
+		margin-top: 50px
+		li
+			width: 107px
+			font-size: 11px
+			line-height: 1.1
+			// padding: 0 5px
+			border: 1px solid #ebe9e7
+			@include box-shadow(0 2px 2px rgba(0,0,0,.12))
+			@include background-image(linear-gradient(bottom, #e5e5e5 3.5%, #fff 96.5%))
+			&:hover
+				border: 1px solid #fff
+				@include background-image(linear-gradient(bottom, #f2a900 0%, #ffc94c 99.46%, #ffc94c 100%))
+				@include box-shadow(0 0 0 rgba(0,0,0,.24))
+				h3
+					color: #fff
+				.subprice__icon
+					&._1
+						i
+							+s(sp1_a)
+					&._2
+						i
+							+s(sp2_a)
+					&._3
+						i
+							+s(sp3_a)
+					&._4
+						i
+							+s(sp4_a)
+					&._5
+						i
+							+s(sp5_a)
+					&._6
+						i
+							+s(sp6_a) 
+			h3
+				color: #858585
+			a
+				height: 115px
+				padding-top: 25px
+				padding-left: 5px
+				padding-right: 5px
+			.subprice__icon
+				&._1
+					i
+						+s(sp1)
+				&._2
+					i
+						+s(sp2)
+				&._3
+					i
+						+s(sp3)
+				&._4
+					i
+						+s(sp4)
+				&._5
+					i
+						+s(sp5)
+				&._6
+					i
+						+s(sp6) 
+				i
+					display: block
+					margin-left: auto
+					margin-right: auto
 	ul
 		+clr
 	li
