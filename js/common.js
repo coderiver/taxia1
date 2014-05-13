@@ -1,6 +1,11 @@
 head.ready(document, function () {
-
 	$(".phone-mask").mask("+7 (999) 999-99-99");
+
+	$( ".datepicker" ).datepicker({
+		dateFormat: "dd.mm.y",
+	});
+	$( ".datepicker" ).datepicker( $.datepicker.regional[ "ru" ] );
+	$(".datepicker").datepicker("setDate", "+0d");
 
 	function tabs() {
 		var el = $('.js-tabs'),
