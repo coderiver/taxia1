@@ -1,5 +1,7 @@
 head.ready(document, function () {
 
+	$(".phone-mask").mask("+7 (999) 999-99-99");
+
 	function tabs() {
 		var el = $('.js-tabs'),
 				el_tab = el.find('.price__menu a'),
@@ -26,6 +28,12 @@ head.ready(document, function () {
 	$('.js-popuptrigger').on('click', function() {
 		$(this).parent().find('.popup').toggle();
 		return false;
+	});
+
+	$(document).click(function(event) {
+		if($(event.target).parents().index($('.popup')) == -1) {
+				$('.popup').hide();
+			}
 	});
 
 });
